@@ -198,7 +198,7 @@ the structure of your Areas of Interest Submission, explaining:
  - ConfusionMatrixDisplay from sklearn.metrics
 
 **Flowchart**
-!Capstone Flow Chart.png
+!![Alt text](Capstone Flow Chart.png)
 1. Data Collection
   * Download the data from Kaggle
 
