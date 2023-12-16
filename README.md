@@ -140,7 +140,7 @@ the structure of your Areas of Interest Submission, explaining:
 **SleepTime** : On average, how many hours of sleep do you get in a 24-hour period? / numeric  
 **Asthma** : (Ever told) (you had) asthma? / categorical  
 
-**4 datasets**
+* **datasets**
 - Original dataset
   * Total rows: 319,073
     Train set: "Yes" value  19,091 rows
@@ -169,71 +169,71 @@ the structure of your Areas of Interest Submission, explaining:
     Test set: "Yes" value  8,178 rows
               "No" value  87,544 rows 
 
-* **Liblaries**
- Basic
+* **Liblaries**  
+Basic
  - pandas
  - numpy
  - matplotlib.pyplot
  - seaborn
 
- For sampling
+For sampling
  - RandomUnderSampler from imblearn.under_sampling
  - RandomOverSampler from imblearn.over_sampling
  - SMOTE from imblearn.over_sampling
  - Counter from collections
  
- For modeling
+For modeling
  - train_test_split from sklearn.model_selection
  - StandardScaler from sklearn.preprocessing
  - LogisticRegression from sklearn.linear_model
 
- For feature selecting
+For feature selecting
  - SelectKBest from sklearn.feature_selection
  - f_regression from sklearn.feature_selection
  - RFE from sklearn.feature_selection
  - RFECV from sklearn.feature_selection
 
- For evaluation
+For evaluation
  - classification_report from sklearn.metrics
  - ConfusionMatrixDisplay from sklearn.metrics
 
-**Flowchart**  
+* **Flowchart**  
 
 ![Alt text](Capstone%20Flow%20Chart.png)
 
 1. Data Collection
-  * Download the data from Kaggle
+   * Download the data from Kaggle
 
 2. Data Cleaning
-  * Remove dupulicate rows
-  * Remove unnecessary columns
+   * Remove dupulicate rows
+   * Remove unnecessary columns
       This project is for ordinaly people, who don't go see a doctor. Therefore, it's concidered that people don't know what diseases they have, so I removed disease infomation.
 
 3. EDA
-  * Check the relationship between heart disease existance and other features
+   * Check the relationship between heart disease existance and other features
 
-4. Data Sampling
+4. Data Sampling  
   The original data is imbalanced data. Therefore, I did sample in 3 ways.
-  * Under sampling
-  * Over sampling
-  * SMOTE
+   * Under sampling
+   * Over sampling
+   * SMOTE
 
 5. Feature Engineering
-  * Convert categorical value into numerical value
-  * Feature Selection
-    I used and compared the results of 3 methods for feature selecting
-    - SelecrKBest
-    - RFE
-    - RFECV
+   * Convert categorical value into numerical value
+   * Feature Selection
+     I used and compared the results of 3 methods for feature selecting
+     - SelecrKBest
+     - RFE
+     - RFECV
 
 6. Hyperparameter Tuning
 
 7. Modeling
-  * Logistic Regression
-  * Decision Tree
-  * Random Forest
-  * SVM
-  * Naive Bayes
+   * Logistic Regression
+   * Decision Tree
+   * Random Forest
+   * SVM
+   * Naive Bayes
 
 8. Create an Application
 
