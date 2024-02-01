@@ -32,6 +32,30 @@ Notebook '3.Capstone Project - Feature Engineering':
     * SelectKBest
     * RFE
     * RFECV
+   
+Notebook '4. Capstone Project - Hyperparameter Optimization; Logistic Regression'
+  - Includes optimizing hyperparameters of Logistic Regression Model
+    * Cross Validation
+    * Pipeline
+  - Includes model evaluation
+    * Precision/Recall/F1
+  - Includes selecting best Logistic Regression Model
+    
+Notebook '5. Capstone Project - Hyperparameter Optimization; Naive Bayes'
+  - Includes baseline model
+  - Includes optimizing hyperparameters of Naive Bayes Model
+    * Cross Validation
+    * Pipeline
+  - Includes model evaluation
+    * Precision/Recall/F1
+  - Includes selecting best Naive Bayes Model
+    
+Notebook '6. Capstone Project - Hyperparameter Optimization; Decision Trees'
+Notebook '7. Capstone Project - Hyperparameter Optimization; Random Forest'
+Notebook '8. Capstone Project - Hyperparameter Optimization; SVM
+Notebook '9. Capstone Project - Final model'
+
+
 
 
 2.0 - Files
