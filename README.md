@@ -51,12 +51,36 @@ Notebook '5. Capstone Project - Hyperparameter Optimization; Naive Bayes'
   - Includes selecting best Naive Bayes Model
     
 Notebook '6. Capstone Project - Hyperparameter Optimization; Decision Trees'
+  - Includes baseline model
+  - Includes optimizing hyperparameters of Decision Trees Model
+    * GridSearchCV
+  - Includes model evaluation
+    * Precision/Recall/F1
+  - Includes selecting best Decision Trees Model
+    
 Notebook '7. Capstone Project - Hyperparameter Optimization; Random Forest'
+  - Includes baseline model
+  - Includes optimizing hyperparameters of Random Forest Model
+    * GridSearchCV
+    * Cross Validation
+  - Includes model evaluation
+    * Precision/Recall/F1
+  - Includes selecting best Random Forest Model
+    
 Notebook '8. Capstone Project - Hyperparameter Optimization; SVM
+  - Includes baseline model
+  - Includes optimizing hyperparameters of SVM Model
+    * GridSearchCV
+    * Cross Validation
+  - Includes model evaluation
+    * Precision/Recall/F1
+  - Includes selecting best SVM Model
+    
 Notebook '9. Capstone Project - Final model'
-
-
-
+  - Includes comparing the best models of 6 machine learning methods
+    * Cross Validation
+    * Precision/Recall/F1
+  - Includes selecting the final model
 
 2.0 - Files
 ---
