@@ -10,7 +10,7 @@ Included in Repository:
 1. Notebooks  
 2. Supplementary Files
 3. Project Overview 
-4. Project Oeganization and Flowchart
+4. Project Organization and Flowchart
 
 
 1.0 - Notebooks
@@ -32,7 +32,55 @@ Notebook '3.Capstone Project - Feature Engineering':
     * SelectKBest
     * RFE
     * RFECV
-
+   
+Notebook '4. Capstone Project - Hyperparameter Optimization; Logistic Regression'
+  - Includes optimizing hyperparameters of Logistic Regression Model
+    * Cross Validation
+    * Pipeline
+  - Includes model evaluation
+    * Precision/Recall/F1
+  - Includes selecting best Logistic Regression Model
+    
+Notebook '5. Capstone Project - Hyperparameter Optimization; Naive Bayes'
+  - Includes baseline model
+  - Includes optimizing hyperparameters of Naive Bayes Model
+    * Cross Validation
+    * Pipeline
+  - Includes model evaluation
+    * Precision/Recall/F1
+  - Includes selecting best Naive Bayes Model
+    
+Notebook '6. Capstone Project - Hyperparameter Optimization; Decision Trees'
+  - Includes baseline model
+  - Includes optimizing hyperparameters of Decision Trees Model
+    * GridSearchCV
+  - Includes model evaluation
+    * Precision/Recall/F1
+  - Includes selecting best Decision Trees Model
+    
+Notebook '7. Capstone Project - Hyperparameter Optimization; Random Forest'
+  - Includes baseline model
+  - Includes optimizing hyperparameters of Random Forest Model
+    * GridSearchCV
+    * Cross Validation
+  - Includes model evaluation
+    * Precision/Recall/F1
+  - Includes selecting best Random Forest Model
+    
+Notebook '8. Capstone Project - Hyperparameter Optimization; SVM
+  - Includes baseline model
+  - Includes optimizing hyperparameters of SVM Model
+    * GridSearchCV
+    * Cross Validation
+  - Includes model evaluation
+    * Precision/Recall/F1
+  - Includes selecting best SVM Model
+    
+Notebook '9. Capstone Project - Final model'
+  - Includes comparing the best models of 6 machine learning methods
+    * Cross Validation
+    * Precision/Recall/F1
+  - Includes selecting the final model
 
 2.0 - Files
 ---
@@ -112,7 +160,7 @@ the structure of your Areas of Interest Submission, explaining:
   **Societal value**: People don’t have to spend extra money for medical expenses if you don’t suspect that you have heart disease. And People can change their lifestyle or habit to make the chances of getting heart disease lower if they need. 
   
 
-4.0 - Project Oeganization and Flowchart
+4.0 - Project Organization and Flowchart
 ---
 * **A description of my dataset**   
   I found this dataset from Kaggle, but it originally comes from the Behavioral Risk Factor Surveillance System (BRFSS), which conducts annual telephone surveys to collect data on the health status of the United States residents.  
@@ -124,7 +172,7 @@ the structure of your Areas of Interest Submission, explaining:
                               Race, PhysicalActivity, GenHealth, Asthma, HeartDisease  
   Those dataset have no missing or invalid values.
   
-  **Column Information**  
+* **Column Information**  
 **HeartDisease** : Respondents that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI) / categorical  
 **BMI** : Body Mass Index (BMI) / numeric  
 **Smoking** : Have you smoked at least 100 cigarettes in your entire life? (Note: 5 packs = 100 cigarettes) / categorical  
@@ -140,64 +188,84 @@ the structure of your Areas of Interest Submission, explaining:
 **SleepTime** : On average, how many hours of sleep do you get in a 24-hour period? / numeric  
 **Asthma** : (Ever told) (you had) asthma? / categorical  
 
-* **datasets**
-- Original dataset
-  * Total rows: 319,073
-    Train set: "Yes" value  19,091 rows
-               "No" value  204,260 rows
-    Test set: "Yes" value  8,178 rows
-              "No" value  87,544 rows
+### **datasets**
+  
+ - Original dataset
+   * Total rows: 319,073
+     Train set: "Yes" value  19,091 rows
+                "No" value  204,260 rows
+     Test set: "Yes" value  8,178 rows
+               "No" value  87,544 rows  
 
-- Under sampled dataset
-  * Total rows: 133,904
-    Train set: "Yes" value  19,091 rows
-               "No" value   19,091 rows
-    Test set: "Yes" value  8,178 rows
-              "No" value  87,544 rows 
+ - Under sampled dataset
+   * Total rows: 133,904
+     Train set: "Yes" value  19,091 rows
+                "No" value   19,091 rows
+     Test set: "Yes" value  8,178 rows
+               "No" value  87,544 rows  
 
-- Over sampled dataset
-  * Total rows: 504,242
-    Train set: "Yes" value 204,260 rows
-               "No" value  204,260 rows
-    Test set: "Yes" value  8,178 rows
-              "No" value  87,544 rows 
+ - Over sampled dataset
+   * Total rows: 504,242
+     Train set: "Yes" value 204,260 rows
+                "No" value  204,260 rows
+     Test set: "Yes" value  8,178 rows
+               "No" value  87,544 rows 
 
-- SMOTE dataset
-  * Total rows: 504,242
-    Train set: "Yes" value 204,260 rows
-               "No" value  204,260 rows
-    Test set: "Yes" value  8,178 rows
-              "No" value  87,544 rows 
+ - SMOTE dataset
+   * Total rows: 504,242
+     Train set: "Yes" value 204,260 rows
+                "No" value  204,260 rows
+     Test set: "Yes" value  8,178 rows
+               "No" value  87,544 rows 
 
-* **Liblaries**  
-Basic
- - pandas
- - numpy
- - matplotlib.pyplot
- - seaborn
+  ### **Liblaries**
+   
+ **Basic**
+   - pandas
+   - numpy
+   - matplotlib.pyplot
+   - seaborn
 
-For sampling
- - RandomUnderSampler from imblearn.under_sampling
- - RandomOverSampler from imblearn.over_sampling
- - SMOTE from imblearn.over_sampling
- - Counter from collections
+ **For sampling**
+   - RandomUnderSampler from imblearn.under_sampling
+   - RandomOverSampler from imblearn.over_sampling
+   - SMOTE from imblearn.over_sampling
+   - Counter from collections
  
-For modeling
- - train_test_split from sklearn.model_selection
- - StandardScaler from sklearn.preprocessing
- - LogisticRegression from sklearn.linear_model
+ **For model preparation**
+   - train_test_split from sklearn.model_selection
+   - StandardScaler from sklearn.preprocessing
+   - MinMaxScaler from sklearn.preprocessing
+   - PCA from sklearn.decomposition
+   - KernelPCA from sklearn.decomposition
 
-For feature selecting
- - SelectKBest from sklearn.feature_selection
- - f_regression from sklearn.feature_selection
- - RFE from sklearn.feature_selection
- - RFECV from sklearn.feature_selection
+ **For machine learning**
+   - LogisticRegression from sklearn.linear_model
+   - GaussianNB from sklearn.naive_bayes
+   - MultinomialNB from sklearn.naive_bayes
+   - BernoulliNB from sklearn.naive_bayes
+   - DecisionTreeClassifier from sklearn.tree
+   - RandomForestClassifier from sklearn.ensemble
+   - LinearSVC from sklearn.svm
+   - SVC from sklearn.svm
 
-For evaluation
- - classification_report from sklearn.metrics
- - ConfusionMatrixDisplay from sklearn.metrics
+**For feature selecting**
+   - SelectKBest from sklearn.feature_selection
+   - f_regression from sklearn.feature_selection
+   - RFE from sklearn.feature_selection
+   - RFECV from sklearn.feature_selection
 
-* **Flowchart**  
+**For hyperparameter optimization**
+   - Pipeline from sklearn.pipeline
+   - GridSearchCV from sklearn.model_selection
+
+**For evaluation**
+   - classification_report from sklearn.metrics
+   - ConfusionMatrixDisplay from sklearn.metrics
+   - f1_score from sklearn.metrics
+   - accuracy_score from sklearn.metrics
+
+ ### **Flowchart**  
 
 ![Alt text](Capstone%20Flow%20Chart.png)
 
@@ -227,15 +295,23 @@ For evaluation
      - RFECV
 
 6. Hyperparameter Tuning
+   I optimized 5 methods of machine learning models on each datasets. 
+   * Machine Learning Methods
+     - Logistic Regression
+     - Naive Bayes
+     - Decision Tree
+     - Random Forest
+     - SVM    
+   * Hyperparameter Optimization Methods
+     - Cross Validation
+     - Pipeline
+     - GridSearchSV
 
 7. Modeling
-   * Logistic Regression
-   * Decision Tree
-   * Random Forest
-   * SVM
-   * Naive Bayes
+   * Create the final model with Decision Tree Classification
 
 8. Create an Application
+   * Create a web application with Streamlit
 
 
     
