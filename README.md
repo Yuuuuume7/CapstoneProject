@@ -189,6 +189,7 @@ the structure of your Areas of Interest Submission, explaining:
 **Asthma** : (Ever told) (you had) asthma? / categorical  
 
 * **datasets**
+  
 - Original dataset
   * Total rows: 319,073
     Train set: "Yes" value  19,091 rows
@@ -217,7 +218,8 @@ the structure of your Areas of Interest Submission, explaining:
     Test set: "Yes" value  8,178 rows
               "No" value  87,544 rows 
 
-* **Liblaries**  
+* **Liblaries**
+   
 **Basic**
  - pandas
  - numpy
