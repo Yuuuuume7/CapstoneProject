@@ -188,7 +188,7 @@ the structure of your Areas of Interest Submission, explaining:
 **SleepTime** : On average, how many hours of sleep do you get in a 24-hour period? / numeric  
 **Asthma** : (Ever told) (you had) asthma? / categorical  
 
-  # **datasets**
+  ### **datasets**
   
  - Original dataset
    * Total rows: 319,073
@@ -218,7 +218,7 @@ the structure of your Areas of Interest Submission, explaining:
      Test set: "Yes" value  8,178 rows
                "No" value  87,544 rows 
 
-* **Liblaries**
+  ### **Liblaries**
    
  **Basic**
    - pandas
@@ -265,7 +265,7 @@ the structure of your Areas of Interest Submission, explaining:
    - f1_score from sklearn.metrics
    - accuracy_score from sklearn.metrics
 
-* **Flowchart**  
+ ### **Flowchart**  
 
 ![Alt text](Capstone%20Flow%20Chart.png)
 
