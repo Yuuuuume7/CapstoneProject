@@ -190,81 +190,80 @@ the structure of your Areas of Interest Submission, explaining:
 
 * **datasets**
   
-- Original dataset
-  * Total rows: 319,073
-    Train set: "Yes" value  19,091 rows
-               "No" value  204,260 rows
-    Test set: "Yes" value  8,178 rows
-              "No" value  87,544 rows
+ - Original dataset
+   * Total rows: 319,073
+     Train set: "Yes" value  19,091 rows
+                "No" value  204,260 rows
+     Test set: "Yes" value  8,178 rows
+               "No" value  87,544 rows  
 
-- Under sampled dataset
-  * Total rows: 133,904
-    Train set: "Yes" value  19,091 rows
-               "No" value   19,091 rows
-    Test set: "Yes" value  8,178 rows
-              "No" value  87,544 rows 
+ - Under sampled dataset
+   * Total rows: 133,904
+     Train set: "Yes" value  19,091 rows
+                "No" value   19,091 rows
+     Test set: "Yes" value  8,178 rows
+               "No" value  87,544 rows  
 
-- Over sampled dataset
-  * Total rows: 504,242
-    Train set: "Yes" value 204,260 rows
-               "No" value  204,260 rows
-    Test set: "Yes" value  8,178 rows
-              "No" value  87,544 rows 
+ - Over sampled dataset
+   * Total rows: 504,242
+     Train set: "Yes" value 204,260 rows
+                "No" value  204,260 rows
+     Test set: "Yes" value  8,178 rows
+               "No" value  87,544 rows 
 
-- SMOTE dataset
-  * Total rows: 504,242
-    Train set: "Yes" value 204,260 rows
-               "No" value  204,260 rows
-    Test set: "Yes" value  8,178 rows
-              "No" value  87,544 rows 
+ - SMOTE dataset
+   * Total rows: 504,242
+     Train set: "Yes" value 204,260 rows
+                "No" value  204,260 rows
+     Test set: "Yes" value  8,178 rows
+               "No" value  87,544 rows 
 
 * **Liblaries**
    
-**Basic**
- - pandas
- - numpy
- - matplotlib.pyplot
- - seaborn
+ **Basic**
+   - pandas
+   - numpy
+   - matplotlib.pyplot
+   - seaborn
 
-**For sampling**
- - RandomUnderSampler from imblearn.under_sampling
- - RandomOverSampler from imblearn.over_sampling
- - SMOTE from imblearn.over_sampling
- - Counter from collections
+ **For sampling**
+   - RandomUnderSampler from imblearn.under_sampling
+   - RandomOverSampler from imblearn.over_sampling
+   - SMOTE from imblearn.over_sampling
+   - Counter from collections
  
-**For model preparation**
- - train_test_split from sklearn.model_selection
- - StandardScaler from sklearn.preprocessing
- - MinMaxScaler from sklearn.preprocessing
- - PCA from sklearn.decomposition
- - KernelPCA from sklearn.decomposition
+ **For model preparation**
+   - train_test_split from sklearn.model_selection
+   - StandardScaler from sklearn.preprocessing
+   - MinMaxScaler from sklearn.preprocessing
+   - PCA from sklearn.decomposition
+   - KernelPCA from sklearn.decomposition
 
-**For machine learning**
- - LogisticRegression from sklearn.linear_model
- - GaussianNB from sklearn.naive_bayes
- - MultinomialNB from sklearn.naive_bayes
- - BernoulliNB from sklearn.naive_bayes
- - DecisionTreeClassifier from sklearn.tree
- - RandomForestClassifier from sklearn.ensemble
- - LinearSVC from sklearn.svm
- - SVC from sklearn.svm
+ **For machine learning**
+   - LogisticRegression from sklearn.linear_model
+   - GaussianNB from sklearn.naive_bayes
+   - MultinomialNB from sklearn.naive_bayes
+   - BernoulliNB from sklearn.naive_bayes
+   - DecisionTreeClassifier from sklearn.tree
+   - RandomForestClassifier from sklearn.ensemble
+   - LinearSVC from sklearn.svm
+   - SVC from sklearn.svm
 
 **For feature selecting**
- - SelectKBest from sklearn.feature_selection
- - f_regression from sklearn.feature_selection
- - RFE from sklearn.feature_selection
- - RFECV from sklearn.feature_selection
+   - SelectKBest from sklearn.feature_selection
+   - f_regression from sklearn.feature_selection
+   - RFE from sklearn.feature_selection
+   - RFECV from sklearn.feature_selection
 
 **For hyperparameter optimization**
- - Pipeline from sklearn.pipeline
- - GridSearchCV from sklearn.model_selection
- - 
+   - Pipeline from sklearn.pipeline
+   - GridSearchCV from sklearn.model_selection
 
 **For evaluation**
- - classification_report from sklearn.metrics
- - ConfusionMatrixDisplay from sklearn.metrics
- - f1_score from sklearn.metrics
- - accuracy_score from sklearn.metrics
+   - classification_report from sklearn.metrics
+   - ConfusionMatrixDisplay from sklearn.metrics
+   - f1_score from sklearn.metrics
+   - accuracy_score from sklearn.metrics
 
 * **Flowchart**  
 
