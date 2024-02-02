@@ -10,7 +10,7 @@ Included in Repository:
 1. Notebooks  
 2. Supplementary Files
 3. Project Overview 
-4. Project Oeganization and Flowchart
+4. Project Organization and Flowchart
 
 
 1.0 - Notebooks
