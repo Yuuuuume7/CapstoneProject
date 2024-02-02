@@ -172,7 +172,7 @@ the structure of your Areas of Interest Submission, explaining:
                               Race, PhysicalActivity, GenHealth, Asthma, HeartDisease  
   Those dataset have no missing or invalid values.
   
-  **Column Information**  
+* **Column Information**  
 **HeartDisease** : Respondents that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI) / categorical  
 **BMI** : Body Mass Index (BMI) / numeric  
 **Smoking** : Have you smoked at least 100 cigarettes in your entire life? (Note: 5 packs = 100 cigarettes) / categorical  
@@ -218,26 +218,26 @@ the structure of your Areas of Interest Submission, explaining:
               "No" value  87,544 rows 
 
 * **Liblaries**  
-Basic
+**Basic**
  - pandas
  - numpy
  - matplotlib.pyplot
  - seaborn
 
-For sampling
+**For sampling**
  - RandomUnderSampler from imblearn.under_sampling
  - RandomOverSampler from imblearn.over_sampling
  - SMOTE from imblearn.over_sampling
  - Counter from collections
  
-For model preparation
+**For model preparation**
  - train_test_split from sklearn.model_selection
  - StandardScaler from sklearn.preprocessing
  - MinMaxScaler from sklearn.preprocessing
  - PCA from sklearn.decomposition
  - KernelPCA from sklearn.decomposition
 
-For machine learning
+**For machine learning**
  - LogisticRegression from sklearn.linear_model
  - GaussianNB from sklearn.naive_bayes
  - MultinomialNB from sklearn.naive_bayes
@@ -247,18 +247,18 @@ For machine learning
  - LinearSVC from sklearn.svm
  - SVC from sklearn.svm
 
-For feature selecting
+**For feature selecting**
  - SelectKBest from sklearn.feature_selection
  - f_regression from sklearn.feature_selection
  - RFE from sklearn.feature_selection
  - RFECV from sklearn.feature_selection
 
-For hyperparameter optimization
+**For hyperparameter optimization**
  - Pipeline from sklearn.pipeline
  - GridSearchCV from sklearn.model_selection
  - 
 
-For evaluation
+**For evaluation**
  - classification_report from sklearn.metrics
  - ConfusionMatrixDisplay from sklearn.metrics
  - f1_score from sklearn.metrics
