@@ -308,7 +308,7 @@ the structure of your Areas of Interest Submission, explaining:
      - GridSearchSV
 
 7. Modeling
-   * Create the final model with Decision Tree Classification
+   * Create the final model with Logistic Regression
 
 8. Create an Application
    * Create a web application with Streamlit
