@@ -295,15 +295,23 @@ the structure of your Areas of Interest Submission, explaining:
      - RFECV
 
 6. Hyperparameter Tuning
+   I optimized 5 methods of machine learning models on each datasets. 
+   * Machine Learning Methods
+     - Logistic Regression
+     - Naive Bayes
+     - Decision Tree
+     - Random Forest
+     - SVM    
+   * Hyperparameter Optimization Methods
+     - Cross Validation
+     - Pipeline
+     - GridSearchSV
 
 7. Modeling
-   * Logistic Regression
-   * Decision Tree
-   * Random Forest
-   * SVM
-   * Naive Bayes
+   * Create the final model with Decision Tree Classification
 
 8. Create an Application
+   * Create a web application with Streamlit
 
 
     
