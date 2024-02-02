@@ -160,7 +160,7 @@ the structure of your Areas of Interest Submission, explaining:
   **Societal value**: People don’t have to spend extra money for medical expenses if you don’t suspect that you have heart disease. And People can change their lifestyle or habit to make the chances of getting heart disease lower if they need. 
   
 
-4.0 - Project Oeganization and Flowchart
+4.0 - Project Organization and Flowchart
 ---
 * **A description of my dataset**   
   I found this dataset from Kaggle, but it originally comes from the Behavioral Risk Factor Surveillance System (BRFSS), which conducts annual telephone surveys to collect data on the health status of the United States residents.  
@@ -230,10 +230,22 @@ For sampling
  - SMOTE from imblearn.over_sampling
  - Counter from collections
  
-For modeling
+For model preparation
  - train_test_split from sklearn.model_selection
  - StandardScaler from sklearn.preprocessing
+ - MinMaxScaler from sklearn.preprocessing
+ - PCA from sklearn.decomposition
+ - KernelPCA from sklearn.decomposition
+
+For machine learning
  - LogisticRegression from sklearn.linear_model
+ - GaussianNB from sklearn.naive_bayes
+ - MultinomialNB from sklearn.naive_bayes
+ - BernoulliNB from sklearn.naive_bayes
+ - DecisionTreeClassifier from sklearn.tree
+ - RandomForestClassifier from sklearn.ensemble
+ - LinearSVC from sklearn.svm
+ - SVC from sklearn.svm
 
 For feature selecting
  - SelectKBest from sklearn.feature_selection
@@ -241,9 +253,16 @@ For feature selecting
  - RFE from sklearn.feature_selection
  - RFECV from sklearn.feature_selection
 
+For hyperparameter optimization
+ - Pipeline from sklearn.pipeline
+ - GridSearchCV from sklearn.model_selection
+ - 
+
 For evaluation
  - classification_report from sklearn.metrics
  - ConfusionMatrixDisplay from sklearn.metrics
+ - f1_score from sklearn.metrics
+ - accuracy_score from sklearn.metrics
 
 * **Flowchart**  
 
