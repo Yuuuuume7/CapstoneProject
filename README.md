@@ -267,7 +267,7 @@ the structure of your Areas of Interest Submission, explaining:
 
  ### **Flowchart**  
 
-![Alt text](Capstone%20Flow%20Chart.png)
+![Alt text](Capstone%20Flow%20Chart%202.png)
 
 1. Data Collection
    * Download the data from Kaggle
