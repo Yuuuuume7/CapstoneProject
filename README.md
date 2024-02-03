@@ -5,7 +5,7 @@ Github: https://github.com/Yuuuuume7/CapstoneProject
 
 Data source: https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease?select=heart_2020_cleaned.csv  
 
-Application : https://yuuuuume7-heartdisease-pred.streamlit.app/
+Application : [https://yuuuuume7-heartdisease-pred.streamlit.app/](https://didactic-space-spork-p4gpw6795jjfr77g-8501.app.github.dev/)
 
 Included in Repository:
 ---
