@@ -124,11 +124,34 @@ def predict(df):
     cap_pred = (cap_proba[:, 1] >= 0.52).astype(int)
 
     if cap_pred == 1:
-        st.text(f"Based from the Machine Learning model, your risk of developing Cardiovascular Disease (CVD) is:\nHIGH\n{cap_proba[:, 1]}")
-    
+        result_high='<p style="color:Red; font-size: 25px;">HIGH</p>'
+        st.text(f"Based from the Machine Learning model,")
+        st.text(f"your risk of developing Heart Disease is:")
+        st.markdown(result_high, unsafe_allow_html=True)
+
+        st.text(f"According to the machine learning model:")
+        st.text(f"The Probability that it will classify you as at risk for heart disease are:")
+        st.text(f"{cap_proba[:, 1]*100}%")
+        st.text(f"The Probability that it will classify you as at no risk for heart disease are:")
+        st.text(f"{cap_proba[:, 0]*100}%")
+        st.text(f"Note: If the Probability it will classify you at risk is over 52%,")
+        st.text(f"then the model will classify you as at risk for heart disease")
+
+
     else:
-        st.text(f"Based from the Machine Learning model, your risk of developing Cardiovascular Disease (CVD) is:\nLOW\n{cap_proba[:, 1]}")
-    
+        result_low='<p style="color:Blue; font-size: 25px;">LOW</p>'
+
+        st.text(f"Based from the Machine Learning model,")
+        st.text(f"your risk of developing Heart Disease is:")
+        st.markdown(result_low, unsafe_allow_html=True)
+
+        st.text(f"According to the machine learning model:")
+        st.text(f"The Probability that it will classify you as at risk for heart disease are:")
+        st.text(f"{cap_proba[:, 1]*100}%")
+        st.text(f"The Probability that it will classify you as at no risk for heart disease are:")
+        st.text(f"{cap_proba[:, 0]*100}%")
+        st.text(f"Note: If the Probability it will classify you at risk is over 52%,")
+        st.text(f"then the model will classify you as at risk for heart disease")
 
 data = [bmi, smoking, drinking, physicalhealth, mentalhealth, diffwalking, sex, age, race, activity, genhealth, sleep, asthma]
 user_df = pd.DataFrame(data, index = ["BMI", "Smoking", "AlcoholDrinking", "PhysicalHealth", "MentalHealth", "DiffWalking", "Sex", "AgeCategory", "Race", "PhysicalActivity", "GenHealth", "SleepTime", "Asthma"])
@@ -137,4 +160,3 @@ user_df = user_df.T
 
 if button:
     predict(user_df)
-    
