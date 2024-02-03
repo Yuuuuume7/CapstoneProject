@@ -5,6 +5,8 @@ Github: https://github.com/Yuuuuume7/CapstoneProject
 
 Data source: https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease?select=heart_2020_cleaned.csv  
 
+Application : https://yuuuuume7-heartdisease-pred.streamlit.app/
+
 Included in Repository:
 ---
 1. Notebooks  
@@ -311,6 +313,7 @@ the structure of your Areas of Interest Submission, explaining:
    * Create the final model with Logistic Regression
 
 8. Create an Application
+   * Create a web application with Streamlit
    * Create a web application with Streamlit
 
 
