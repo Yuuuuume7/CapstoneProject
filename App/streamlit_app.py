@@ -123,40 +123,41 @@ def predict(df):
     cap_proba = cap_model.predict_proba(pca_df)
     cap_pred = (cap_proba[:, 1] >= 0.52).astype(int)
 
+    #import joblib
+    joblib.dump(cap_proba, "cap_proba.sav")
+
     if cap_pred == 1:
-        result_high='<p style="color:Red; font-size: 25px;">HIGH</p>'
-        st.text(f"Based from the Machine Learning model,")
-        st.text(f"your risk of developing Heart Disease is:")
-        st.markdown(result_high, unsafe_allow_html=True)
+        #result_high='<p style="color:Red; font-size: 25px;">HIGH</p>'
+        st.markdown(f"Based from the Machine Learning model,")
+        st.markdown(f"your risk of developing Heart Disease is:")
+        #st.markdown(result_high, unsafe_allow_html=True)
 
-        st.text(f"According to the machine learning model:")
-        st.text(f"The Probability that it will classify you as at risk for heart disease are:")
-        st.text(f"{cap_proba[:, 1]*100}%")
-        st.text(f"The Probability that it will classify you as at no risk for heart disease are:")
-        st.text(f"{cap_proba[:, 0]*100}%")
-        st.text(f"Note: If the Probability it will classify you at risk is over 52%,")
-        st.text(f"then the model will classify you as at risk for heart disease")
+        st.error('HIGH')
 
-
+        
     else:
-        result_low='<p style="color:Blue; font-size: 25px;">LOW</p>'
+        st.balloons()
+        #result_low='<p style="color:Blue; font-size: 25px;">LOW</p>'
+        st.markdown(f"Based from the Machine Learning model, your risk of developing Heart Disease is:")
+        #st.markdown(result_low, unsafe_allow_html=True)
 
-        st.text(f"Based from the Machine Learning model,")
-        st.text(f"your risk of developing Heart Disease is:")
-        st.markdown(result_low, unsafe_allow_html=True)
+        st.warning('LOW')
 
-        st.text(f"According to the machine learning model:")
-        st.text(f"The Probability that it will classify you as at risk for heart disease are:")
-        st.text(f"{cap_proba[:, 1]*100}%")
-        st.text(f"The Probability that it will classify you as at no risk for heart disease are:")
-        st.text(f"{cap_proba[:, 0]*100}%")
-        st.text(f"Note: If the Probability it will classify you at risk is over 52%,")
-        st.text(f"then the model will classify you as at risk for heart disease")
-
+        
 data = [bmi, smoking, drinking, physicalhealth, mentalhealth, diffwalking, sex, age, race, activity, genhealth, sleep, asthma]
 user_df = pd.DataFrame(data, index = ["BMI", "Smoking", "AlcoholDrinking", "PhysicalHealth", "MentalHealth", "DiffWalking", "Sex", "AgeCategory", "Race", "PhysicalActivity", "GenHealth", "SleepTime", "Asthma"])
 user_df = user_df.T
 
 
 if button:
+    st.text(f"Hi {username}!")
     predict(user_df)
+
+    st.text(" ")
+    st.text(" ")
+    cap_proba = joblib.load("cap_proba.sav")
+    st.markdown(f"According to the machine learning model:")
+    st.success(f"The Probability that it will classify you as at risk for heart disease are:   {int(cap_proba[:, 1]*100)}%, the Probability that it will classify you as at no risk for heart disease are:   {int(cap_proba[:, 0]*100)}%")
+    st.text(" ")
+    st.text(" ")
+    st.markdown(f"Note: If the Probability it will classify you at risk is over 52%, then the model will classify you as at risk for heart disease")
