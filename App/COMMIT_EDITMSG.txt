@@ -1,0 +1,24 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is behind 'origin/master' by 9 commits, and can be fast-forwarded.
+#   (use "git pull" to update your local branch)
+#
+# Changes to be committed:
+#	new file:   cap_model.sav
+#	modified:   requirements.txt
+#	modified:   streamlit_app.py
+#
+# Changes not staged for commit:
+#	modified:   requirements.txt
+#	modified:   streamlit_app.py
+#
+# Untracked files:
+#	.streamlit/
+#	cap_pca.sav
+#	cap_proba.sav
+#	cap_rfe.sav
+#	cap_scaler.sav
+#
